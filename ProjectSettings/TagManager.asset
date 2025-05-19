@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Coin
+  - DeathZone
+  - poin
+  - Enemy
+  - bbb
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 3305190537
+    locked: 0
+  - name: ForeGround
+    uniqueID: 2782556793
+    locked: 0
+  - name: Ground
+    uniqueID: 621924997
+    locked: 0
+  - name: Player
+    uniqueID: 2593905787
+    locked: 0
+  - name: Coin
+    uniqueID: 2492385011
+    locked: 0
+  - name: DeathZone
+    uniqueID: 3102476185
+    locked: 0
+  - name: Enemy
+    uniqueID: 2375549925
+    locked: 0
+  - name: Flatform
+    uniqueID: 1002200101
+    locked: 0
+  - name: Item
+    uniqueID: 1888991985
+    locked: 0
