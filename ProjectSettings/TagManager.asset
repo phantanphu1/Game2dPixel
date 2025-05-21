@@ -9,6 +9,7 @@ TagManager:
   - poin
   - Enemy
   - bbb
+  - hp
   layers:
   - Default
   - TransparentFX
