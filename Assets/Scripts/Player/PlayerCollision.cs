@@ -3,9 +3,11 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
     GameManager gameManager;
+    ItemPickup itemPickup;
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
+        itemPickup = FindObjectOfType<ItemPickup>();
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -23,6 +25,10 @@ public class PlayerCollision : MonoBehaviour
         else if (other.CompareTag("Enemy"))
         {
             gameManager.TakeDamage(10);
+        }
+        else if (other.CompareTag("hp"))
+        {
+            itemPickup.Pickup();
         }
     }
 
