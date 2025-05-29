@@ -16,12 +16,15 @@ public class InventoryItem
     public string itemName;
     public int value;
     public Sprite image;
+    public Sprite icon;
+
     public InventoryItem(InventoryItem item)
     {
         this.id = item.id;
         this.itemName = item.itemName;
         this.value = item.value;
         this.image = item.image;
+        this.icon = item.icon;
     }
     public InventoryItem()
     {
