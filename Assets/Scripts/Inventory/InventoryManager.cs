@@ -21,7 +21,6 @@ public class InventoryManager : MonoBehaviour
     private List<InventoryItem> _lsInventoryItem = new List<InventoryItem>();
     private string _keyData = "keydata";
     private List<ItemUiInventory> lsItemUIInventory = new List<ItemUiInventory>();
-
     private void Awake()
     {
         if (Instance != null)
@@ -64,8 +63,6 @@ public class InventoryManager : MonoBehaviour
     public void MoveItem(InventoryItem item)
 
     {
-
-        // _lsInventoryItem.Remove(item);
 
         Debug.Log($"_lsInventoryItem:{_lsInventoryItem.Count} {JsonUtility.ToJson(item)}");
         if (CheckContainItem(item))
@@ -130,10 +127,8 @@ public class InventoryManager : MonoBehaviour
         var classname = obj.GetComponent<ItemUiInventory>();
         if (classname != null)
         {
-
             lsItemUIInventory.Add(classname);
             classname.gameObject.SetActive(false);
-
         }
     }
     public void OpenInventory()
@@ -156,6 +151,7 @@ public class InventoryManager : MonoBehaviour
         {
             foreach (Transform item in itemHolder)
             {
+
                 item.transform.Find("item (1)/RemoveButton").gameObject.SetActive(true);
             }
         }

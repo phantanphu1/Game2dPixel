@@ -81,11 +81,12 @@ public class PlayerController : MonoBehaviour
     public void HandleJump()
     {
         if (gameManager.IsGameOver()) return;
-        else if (Input.GetButtonDown("Jump") && isGrounded)
+        else if (Input.GetKey(KeyCode.W) && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             AudioManager.instance.HandleJumpAudio();
         }
+
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 

@@ -17,7 +17,9 @@ MonoBehaviour:
     itemName: Coin
     value: 100
     image: {fileID: -3338749442709606003, guid: 08deef94648114b0e95fb34914528676, type: 3}
+    icon: {fileID: 0}
   - id: 002
     itemName: HP
     value: 10
     image: {fileID: 21300000, guid: 02800fb9cff14da47a04572790384d8b, type: 3}
+    icon: {fileID: 0}

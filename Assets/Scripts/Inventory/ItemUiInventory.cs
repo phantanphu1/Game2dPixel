@@ -29,8 +29,8 @@ public class ItemUiInventory : MonoBehaviour
     }
     public void UserItem()
     {
-        Remove();
         InventoryManager.Instance.Damage();
+        Remove();
 
 
         // FindObjectOfType<GameManager>().AddDamage(item.value);
